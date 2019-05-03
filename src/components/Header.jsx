@@ -13,12 +13,16 @@ function Header() {
           height: 100px;
           width: 100%;
         }
+        .container{
+          display: flex;
+        }
         .container p{
           color: white;
         }
       `}</style>
       <div className="main">
         <div className="container">
+          <Link to="/" style={{textDecoration: 'none'}}><p>Home</p></Link>
           <p>My Story</p>
           <p>Gallery</p>
           <p>Store</p>
