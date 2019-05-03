@@ -18,3 +18,6 @@ _A webpage to look at my protfoliio and purchase art pieces._
 * _Make a shop to handle transactions_
 
 ## Components
+* _App is main component_
+* _Admin page alters all website content_
+* _Header holds links for all pages for users_
