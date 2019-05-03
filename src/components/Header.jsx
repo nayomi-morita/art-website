@@ -7,22 +7,27 @@ function Header() {
       <style jsx>{`
         p{
           margin: 0;
+          font-size: 20px;
         }
         .main{
           background-color: black;
           height: 100px;
           width: 100%;
+          display: flex;
+          justify-content: space-between;
         }
-        .container{
+        .right{
           display: flex;
         }
-        .container p{
+        .right p, .left p{
           color: white;
         }
       `}</style>
       <div className="main">
-        <div className="container">
+        <div className="left">
           <Link to="/" style={{textDecoration: 'none'}}><p>Home</p></Link>
+        </div>
+        <div className="right">
           <Link to="/MyStory" style={{textDecoration: 'none'}}><p>My Story</p></Link>
           <Link to="/Gallery" style={{textDecoration: 'none'}}><p>Gallery</p></Link>
           <Link to="/Store" style={{textDecoration: 'none'}}><p>Store</p></Link>
