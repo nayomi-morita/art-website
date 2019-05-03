@@ -26,8 +26,9 @@ function Admin(props) {
   
   return(
     <div>
-    <style jsx>{`
-    `}</style>
+      <style jsx>{`
+        
+      `}</style>
       <form onSubmit={updater}>
         <p>Title <input type='text' id='title' placeholder={props.artReducer.title} ref={(input) => {_title = input;}}/></p>
         <p>Description<input className="descriptor" type='text' id='description' placeholder={props.artReducer.description} ref={(input) => {_description = input;}}/></p>

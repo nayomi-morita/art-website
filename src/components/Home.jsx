@@ -6,6 +6,11 @@ import { connect } from 'react-redux';
 function Home(props) {
   return(
     <div>
+      <style jsx>{`
+        div{
+          padding: 0 20px 0 20px;
+        }
+      `}</style>
       <p>{props.artReducer.title}</p>
       <p>{props.artReducer.description}</p>
     </div>

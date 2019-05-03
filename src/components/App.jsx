@@ -12,12 +12,12 @@ import MyStory from './MyStory'
 function App(){
   return(
     <div>
-    <style jsx global>{`
-      body {
-        margin: 0;
-      }
-    `}</style>
-    <Header/>
+      <style jsx global>{`
+        body {
+          margin: 0;
+        }
+      `}</style>
+      <Header/>
       <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/Admin' component={Admin} />
