@@ -9,12 +9,17 @@ function Header() {
           margin: 0;
           font-size: 20px;
         }
-        .main{
-          background-color: black;
-          height: 100px;
-          width: 100%;
+        .container{
+          padding: 20px 20px 20px 20px;
           display: flex;
           justify-content: space-between;
+        }
+        .main{
+          background-color: black;
+          width: 100%;
+        }
+        .links{
+          padding-right: 50px;
         }
         .right{
           display: flex;
@@ -24,14 +29,16 @@ function Header() {
         }
       `}</style>
       <div className="main">
-        <div className="left">
-          <Link to="/" style={{textDecoration: 'none'}}><p>Home</p></Link>
-        </div>
-        <div className="right">
-          <Link to="/MyStory" style={{textDecoration: 'none'}}><p>My Story</p></Link>
-          <Link to="/Gallery" style={{textDecoration: 'none'}}><p>Gallery</p></Link>
-          <Link to="/Store" style={{textDecoration: 'none'}}><p>Store</p></Link>
-          <Link to="/Contact" style={{textDecoration: 'none'}}><p>Contact</p></Link>
+        <div className="container">
+          <div className="left">
+            <Link to="/" style={{textDecoration: 'none'}}><p>Home</p></Link>
+          </div>
+          <div className="right">
+            <Link to="/MyStory" style={{textDecoration: 'none'}}><p className="links">My Story</p></Link>
+            <Link to="/Gallery" style={{textDecoration: 'none'}}><p className="links">Gallery</p></Link>
+            <Link to="/Store" style={{textDecoration: 'none'}}><p className="links">Store</p></Link>
+            <Link to="/Contact" style={{textDecoration: 'none'}}><p>Contact</p></Link>
+          </div>
         </div>
       </div>
     </div>
