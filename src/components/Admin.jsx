@@ -26,9 +26,11 @@ function Admin(props) {
   
   return(
     <div>
+    <style jsx>{`
+    `}</style>
       <form onSubmit={updater}>
-        <p>Title <input type='text' id='title' placeholder='Title' ref={(input) => {_title = input;}}/></p>
-        <p>Description<input type='text' id='description' placeholder='description' ref={(input) => {_description = input;}}/></p>
+        <p>Title <input type='text' id='title' placeholder={props.artReducer.title} ref={(input) => {_title = input;}}/></p>
+        <p>Description<input className="descriptor" type='text' id='description' placeholder={props.artReducer.description} ref={(input) => {_description = input;}}/></p>
         <button type='submit'></button>
       </form>
     </div>    
