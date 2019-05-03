@@ -6,7 +6,6 @@ import { connect } from 'react-redux';
 function Home(props) {
   return(
     <div>
-      <p>Test</p>
       <p>{props.artReducer.title}</p>
       <p>{props.artReducer.description}</p>
     </div>
