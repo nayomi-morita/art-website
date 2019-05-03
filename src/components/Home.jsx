@@ -3,7 +3,9 @@ import { Switch, Route, Link } from 'react-router-dom';
 
 function Home() {
   return(
+    <div>
     
+    </div>
   );
 }
 
