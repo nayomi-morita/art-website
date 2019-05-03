@@ -23,10 +23,10 @@ function Header() {
       <div className="main">
         <div className="container">
           <Link to="/" style={{textDecoration: 'none'}}><p>Home</p></Link>
-          <p>My Story</p>
-          <p>Gallery</p>
-          <p>Store</p>
-          <p>Contact</p>
+          <Link to="/MyStory" style={{textDecoration: 'none'}}><p>My Story</p></Link>
+          <Link to="/Gallery" style={{textDecoration: 'none'}}><p>Gallery</p></Link>
+          <Link to="/Store" style={{textDecoration: 'none'}}><p>Store</p></Link>
+          <Link to="/Contact" style={{textDecoration: 'none'}}><p>Contact</p></Link>
         </div>
       </div>
     </div>
