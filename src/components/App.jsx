@@ -5,6 +5,9 @@ import Header from './Header';
 import Home from './Home';
 import Admin from './Admin';
 import Contact from './Contact'
+import Gallery from './Gallery'
+import Store from './Store'
+import MyStory from './MyStory'
 
 function App(){
   return(
@@ -19,6 +22,9 @@ function App(){
         <Route exact path='/' component={Home} />
         <Route path='/Admin' component={Admin} />
         <Route path='/Contact' component={Contact} />
+        <Route path='/Gallery' component={Gallery} />
+        <Route path='/Store' component={Store} />
+        <Route path='/MyStory' component={MyStory} />
         <Route component={Error404} />
       </Switch>
     </div>
