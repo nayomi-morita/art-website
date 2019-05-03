@@ -4,19 +4,21 @@ import Error404 from './Error404';
 import Header from './Header';
 import Home from './Home';
 import Admin from './Admin';
+import Contact from './Contact'
 
 function App(){
   return(
     <div>
-      <style jsx global>{`
-        body {
-          margin: 0;
-        }
-      `}</style>
-      <Header/>
-        <Switch>
+    <style jsx global>{`
+      body {
+        margin: 0;
+      }
+    `}</style>
+    <Header/>
+      <Switch>
         <Route exact path='/' component={Home} />
         <Route path='/Admin' component={Admin} />
+        <Route path='/Contact' component={Contact} />
         <Route component={Error404} />
       </Switch>
     </div>
