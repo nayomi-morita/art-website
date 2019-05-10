@@ -1,4 +1,4 @@
-export default (state = {hometitle:'Nayomis site', homedescription:'Welcome! and thank you for visiting'}, action) => {
+export default (state = {hometitle:['Nayomis site'], homedescription:'Welcome! and thank you for visiting'}, action) => {
   switch (action.type) {
   case 'HOME_SUBMIT':
     const {hometitle, homedescription} = action;

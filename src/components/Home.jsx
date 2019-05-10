@@ -5,7 +5,7 @@ import homeReducer from './../reducers/home-reducer.js';
 import { connect } from 'react-redux';
 
 function Home(props) {
-  console.log('yo ' + props.homeReducer)
+  console.log('yo ' + props.homeReducer.hometitle)
   return(
     <div>
       <style jsx>{`
@@ -45,8 +45,8 @@ function Home(props) {
 
 const mapStateToProps = state => {
   return {
-    artReducer: state,
-    homeReducer: state
+    homeReducer: state,
+    artReducer: state
   }
 }
 
