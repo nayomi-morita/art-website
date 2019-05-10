@@ -15,7 +15,7 @@ function Header() {
           justify-content: space-between;
         }
         .main{
-          background-color: black;
+          background-color: #3d3d3d;
           width: 100%;
         }
         .links{
