@@ -27,6 +27,16 @@ function Header() {
         .right p, .left p{
           color: white;
         }
+        @media screen and (max-width: 550px){
+          .first{
+            display: none;
+          }
+        }
+        @media screen and (max-width: 420px){
+          .second{
+            display: none;
+          }
+        }
       `}</style>
       <div className="main">
         <div className="container">
@@ -34,10 +44,10 @@ function Header() {
             <Link to="/" style={{textDecoration: 'none'}}><p>Home</p></Link>
           </div>
           <div className="right">
-            <Link to="/MyStory" style={{textDecoration: 'none'}}><p className="links">My Story</p></Link>
-            <Link to="/Gallery" style={{textDecoration: 'none'}}><p className="links">Gallery</p></Link>
+            <Link to="/MyStory" style={{textDecoration: 'none'}}><p className="links first">My Story</p></Link>
+            <Link to="/Contact" style={{textDecoration: 'none'}}><p className="links second">Contact</p></Link>
             <Link to="/Store" style={{textDecoration: 'none'}}><p className="links">Store</p></Link>
-            <Link to="/Contact" style={{textDecoration: 'none'}}><p>Contact</p></Link>
+            <Link to="/Gallery" style={{textDecoration: 'none'}}><p>Gallery</p></Link>
           </div>
         </div>
       </div>
