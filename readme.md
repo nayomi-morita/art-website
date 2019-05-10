@@ -13,8 +13,9 @@ _A webpage to look at my protfoliio and purchase art pieces._
 * _Admin page allows editing of all pages_
 * _Save and display images_
 * _Firebase holds all my states with redux_
+* _Aesthetic display of my art using css_
 
-## Extended Goals 
+## Extended Goals
 * _Make a shop to handle transactions_
 
 ## Components
