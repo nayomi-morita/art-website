@@ -11,8 +11,10 @@ function Home(props) {
           padding: 0 20px 0 20px;
         }
       `}</style>
+      <p>prop test:</p>
       <p>{props.artReducer.title}</p>
       <p>{props.artReducer.description}</p>
+      <div></div>
     </div>
   );
 }
