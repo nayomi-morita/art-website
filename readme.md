@@ -25,7 +25,7 @@ _A webpage to look at my protfoliio and purchase art pieces._
 
 ## Setup
 * _Clone this repository_
-https://github.com/nayomi-morita/react-friday.git
+https://github.com/nayomi-morita/art-website
 * _Use chosen code editor to make changes (I used atom)._
 * _Install node/homebrew on device_
 * _Run "npm i" in terminal in react-friday project_
