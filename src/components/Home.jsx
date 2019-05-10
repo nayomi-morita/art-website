@@ -17,7 +17,7 @@ function Home(props) {
           border 1px solid black;
           margin-top: 20px;
           height: 100px;
-          background-color: gray;
+          background-color: #d6d6d6;
         }
       `}</style>
       <p>prop test:</p>
