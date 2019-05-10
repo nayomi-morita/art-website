@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route, Link } from 'react-router-dom';
 import artReducer from './../reducers/art-reducer.js';
+import homeReducer from './../reducers/home-reducer.js';
 import { connect } from 'react-redux';
 
 function Home(props) {
@@ -21,8 +22,8 @@ function Home(props) {
         }
       `}</style>
       <p>prop test:</p>
-      <p>{props.artReducer.title[0]}</p>
-      <p>{props.artReducer.description[0]}</p>
+      <p>{props.homeReducer.hometitle}</p>
+      <p>{props.homeReducer.homedescription}</p>
       <div className="line">
       </div>
       <div className="artForm">
@@ -43,7 +44,8 @@ function Home(props) {
 
 const mapStateToProps = state => {
   return {
-    artReducer: state
+    artReducer: state,
+    homeReducer: state
   }
 }
 

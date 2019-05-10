@@ -5,7 +5,7 @@ import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import artReducer from './reducers/art-reducer.js';
-
+import homeReducer from './reducers/home-reducer.js';
 
 const store = createStore(artReducer)
 
