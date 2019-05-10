@@ -25,10 +25,16 @@ function Home(props) {
       <div className="line">
       </div>
       <div className="artForm">
+        <p>{props.artReducer.title[0]}</p>
+        <p>{props.artReducer.description[0]}</p>
       </div>
       <div className="artForm">
+        <p>{props.artReducer.title[1]}</p>
+        <p>{props.artReducer.description[1]}</p>
       </div>
       <div className="artForm">
+        <p>{props.artReducer.title[2]}</p>
+        <p>{props.artReducer.description[2]}</p>
       </div>
     </div>
   );
