@@ -1,10 +1,10 @@
-export default (state = {title:'Nayomis site', description:'Welcome! and thank you for visiting'}, action) => {
+export default (state = {hometitle:'Nayomis site', homedescription:'Welcome! and thank you for visiting'}, action) => {
   switch (action.type) {
   case 'HOME_SUBMIT':
-    const {title, description} = action;
+    const {hometitle, homedescription} = action;
     let newState = Object.assign({}, state, {
-      title: title,
-      description: description
+      hometitle: hometitle,
+      homedescription: homedescription
     })
     return newState;
   default:
