@@ -20,9 +20,13 @@ function Home(props) {
         }
       `}</style>
       <p>prop test:</p>
-      <p>{props.artReducer.title}</p>
-      <p>{props.artReducer.description}</p>
+      <p>{props.artReducer.title[0]}</p>
+      <p>{props.artReducer.description[0]}</p>
       <div className="line">
+      </div>
+      <div className="artForm">
+      </div>
+      <div className="artForm">
       </div>
       <div className="artForm">
       </div>
