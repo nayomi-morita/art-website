@@ -13,11 +13,18 @@ function Home(props) {
         .line{
           border: .5px solid black
         }
+        .artForm{
+          border 1px solid black;
+          margin-top: 20px;
+          height: 100px;
+        }
       `}</style>
       <p>prop test:</p>
       <p>{props.artReducer.title}</p>
       <p>{props.artReducer.description}</p>
       <div className="line">
+      </div>
+      <div className="artForm">
       </div>
     </div>
   );
