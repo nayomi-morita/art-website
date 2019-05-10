@@ -10,11 +10,15 @@ function Home(props) {
         div{
           padding: 0 20px 0 20px;
         }
+        .line{
+          border: .5px solid black
+        }
       `}</style>
       <p>prop test:</p>
       <p>{props.artReducer.title}</p>
       <p>{props.artReducer.description}</p>
-      <div></div>
+      <div className="line">
+      </div>
     </div>
   );
 }
